@@ -6,10 +6,9 @@ import { useInView } from "react-intersection-observer";
 import ProjectCard from "@/components/ProjectCard";
 import { projects } from "@/data/projects";
 
+type ProjectFilter = "all" | "software" | "data-engineering" | "fullstack";
 export default function ProjectsPage() {
-  const [filter, setFilter] = useState<
-    "all" | "software" | "data-engineering" | "fullstack"
-  >("all");
+  const [filter, setFilter] = useState<ProjectFilter>("all");
   const [headerRef, headerInView] = useInView({
     triggerOnce: true,
     threshold: 0.1,
@@ -18,7 +17,7 @@ export default function ProjectsPage() {
   const filteredProjects =
     filter === "all" ? projects : projects.filter((p) => p.category === filter);
 
-  const categories = [
+  const categories: { id: ProjectFilter; label: string; count: number }[] = [
     { id: "all", label: "All Projects", count: projects.length },
     {
       id: "data-engineering",
@@ -69,7 +68,7 @@ export default function ProjectsPage() {
           {categories.map((category, index) => (
             <motion.button
               key={category.id}
-              onClick={() => setFilter(category.id as any)}
+              onClick={() => setFilter(category.id)}
               className={`px-6 py-3 rounded-lg font-medium transition-all ${
                 filter === category.id
                   ? "bg-blue-600 text-white shadow-lg"

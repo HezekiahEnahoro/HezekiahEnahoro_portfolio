@@ -256,11 +256,11 @@ export default function SkillsPage() {
               Always Learning, Always Growing
             </h3>
             <p className="text-gray-700 leading-relaxed mb-6">
-              Technology evolves rapidly, and so do I. I'm constantly exploring
-              new tools, frameworks, and best practices to stay at the forefront
-              of software development and data engineering. Currently deepening
-              my expertise in real-time data processing and cloud-native
-              architectures.
+              Technology evolves rapidly, and so do I. I&apos;m constantly
+              exploring new tools, frameworks, and best practices to stay at the
+              forefront of software development and data engineering. Currently
+              deepening my expertise in real-time data processing and
+              cloud-native architectures.
             </p>
             <div className="flex flex-wrap justify-center gap-3">
               {["Machine Learning", "Kubernetes", "Terraform", "GraphQL"].map(
