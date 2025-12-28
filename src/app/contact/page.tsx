@@ -14,7 +14,7 @@ export default function ContactPage() {
       icon: Mail,
       label: "Email",
       value: "withthedev@gmail.com",
-      href: "mailto:withthedev@gmail.com",
+      href: "mailto:withthedev@gmail.com?subject=Hello from Portfolio",
     },
     {
       icon: MapPin,

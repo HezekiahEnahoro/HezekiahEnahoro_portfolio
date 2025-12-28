@@ -7,6 +7,7 @@ import {
   Cloud,
   GitBranch,
   Zap,
+  Brain,
   Package,
   Server,
   Workflow,
@@ -26,86 +27,111 @@ export default function SkillsPage() {
     threshold: 0.1,
   });
 
-  const skillCategories = [
-    {
-      icon: Code2,
-      title: "Programming Languages",
-      color: "from-blue-500 to-cyan-500",
-      skills: [
-        { name: "Python", level: 90 },
-        { name: "JavaScript/TypeScript", level: 85 },
-        { name: "SQL", level: 90 },
-        { name: "Java", level: 70 },
-      ],
-    },
-    {
-      icon: Server,
-      title: "Frameworks & Libraries",
-      color: "from-purple-500 to-pink-500",
-      skills: [
-        { name: "React/Next.js", level: 85 },
-        { name: "Node.js/Express", level: 80 },
-        { name: "FastAPI/Django", level: 75 },
-        { name: "TailwindCSS", level: 90 },
-      ],
-    },
-    {
-      icon: Database,
-      title: "Data Engineering",
-      color: "from-green-500 to-teal-500",
-      skills: [
-        { name: "Apache Spark", level: 80 },
-        { name: "Apache Kafka", level: 75 },
-        { name: "Airflow", level: 85 },
-        { name: "dbt", level: 80 },
-      ],
-    },
-    {
-      icon: Cloud,
-      title: "Cloud & Infrastructure",
-      color: "from-orange-500 to-red-500",
-      skills: [
-        { name: "AWS", level: 75 },
-        { name: "Docker", level: 85 },
-        { name: "Kubernetes", level: 65 },
-        { name: "CI/CD", level: 80 },
-      ],
-    },
-    {
-      icon: Package,
-      title: "Databases",
-      color: "from-indigo-500 to-purple-500",
-      skills: [
-        { name: "PostgreSQL", level: 90 },
-        { name: "MongoDB", level: 80 },
-        { name: "Redis", level: 75 },
-        { name: "Snowflake", level: 70 },
-      ],
-    },
-    {
-      icon: GitBranch,
-      title: "Tools & Practices",
-      color: "from-yellow-500 to-orange-500",
-      skills: [
-        { name: "Git/GitHub", level: 90 },
-        { name: "REST APIs", level: 85 },
-        { name: "Testing (Jest/Pytest)", level: 80 },
-        { name: "Agile/Scrum", level: 85 },
-      ],
-    },
-  ];
+ const skillCategories = [
+   {
+     icon: Code2,
+     title: "Programming Languages",
+     color: "from-blue-500 to-cyan-500",
+     skills: [
+       { name: "Python", level: 85 },
+       { name: "JavaScript/TypeScript", level: 85 },
+       { name: "SQL", level: 75 },
+       { name: "HTML/CSS", level: 90 },
+     ],
+   },
+   {
+     icon: Server,
+     title: "Frontend Development",
+     color: "from-purple-500 to-pink-500",
+     skills: [
+       { name: "React 18", level: 85 },
+       { name: "Next.js 15", level: 80 },
+       { name: "TypeScript", level: 80 },
+       { name: "TailwindCSS", level: 85 },
+     ],
+   },
+   {
+     icon: Database,
+     title: "Backend & APIs",
+     color: "from-green-500 to-teal-500",
+     skills: [
+       { name: "FastAPI", level: 80 },
+       { name: "Flask", level: 70 },
+       { name: "REST APIs", level: 85 },
+       { name: "Node.js/Express", level: 50 },
+     ],
+   },
+   {
+     icon: Package,
+     title: "Databases & Storage",
+     color: "from-indigo-500 to-purple-500",
+     skills: [
+       { name: "PostgreSQL", level: 80 },
+       { name: "MongoDB", level: 70 },
+       { name: "SQLAlchemy ORM", level: 75 },
+       { name: "Redis", level: 70 },
+     ],
+   },
+   {
+     icon: Brain,
+     title: "Data & Machine Learning",
+     color: "from-pink-500 to-rose-500",
+     skills: [
+       { name: "Pandas/NumPy", level: 75 },
+       { name: "XGBoost", level: 70 },
+       { name: "Scikit-learn", level: 65 },
+       { name: "spaCy (NLP)", level: 60 },
+     ],
+   },
+   {
+     icon: Cloud,
+     title: "DevOps & Deployment",
+     color: "from-orange-500 to-red-500",
+     skills: [
+       { name: "Git/GitHub", level: 85 },
+       { name: "Vercel", level: 80 },
+       { name: "Railway/Render", level: 75 },
+       { name: "Docker", level: 50 },
+     ],
+   },
+   {
+     icon: Zap,
+     title: "Currently Learning",
+     color: "from-yellow-500 to-amber-500",
+     skills: [
+       { name: "Apache Spark", level: 40 },
+       { name: "Apache Kafka", level: 35 },
+       { name: "Airflow", level: 30 },
+       { name: "dbt", level: 25 },
+     ],
+   },
+   {
+     icon: GitBranch,
+     title: "Tools & Services",
+     color: "from-cyan-500 to-blue-500",
+     skills: [
+       { name: "Stripe API", level: 75 },
+       { name: "GitHub Actions", level: 60 },
+       { name: "Framer Motion", level: 80 },
+       { name: "Web Scraping", level: 70 },
+     ],
+   },
+ ];
 
   const tools = [
     { name: "VS Code", logo: "💻" },
-    { name: "Docker", logo: "🐳" },
-    { name: "Git", logo: "📦" },
+    { name: "Git & GitHub", logo: "🔀" },
+    { name: "Chrome DevTools", logo: "🔍" },
     { name: "Postman", logo: "📮" },
-    { name: "Jupyter", logo: "📓" },
-    { name: "Figma", logo: "🎨" },
-    { name: "Slack", logo: "💬" },
-    { name: "Jira", logo: "📋" },
+    { name: "Jupyter Notebook", logo: "📓" },
+    { name: "Vercel", logo: "▲" },
+    { name: "Railway", logo: "🚂" },
+    { name: "Render", logo: "🎨" },
+    { name: "pgAdmin", logo: "🐘" },
+    { name: "MongoDB Compass", logo: "🍃" },
+    { name: "Stripe", logo: "💳" },
+    { name: "Package Managers", logo: "📦" },
   ];
-
   return (
     <div className="min-h-screen pt-24 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

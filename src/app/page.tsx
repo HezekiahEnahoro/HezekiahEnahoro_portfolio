@@ -15,6 +15,7 @@ import { useInView } from "react-intersection-observer";
 import { getFeaturedProjects } from "@/data/projects";
 import ProjectCard from "@/components/ProjectCard";
 
+
 export default function Home() {
   const [heroRef, heroInView] = useInView({
     triggerOnce: true,
@@ -125,7 +126,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={heroInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.4 }}>
-                Software Developer & Aspiring Data Engineer
+                Full-Stack Developer | React • Python • TypeScript
               </motion.h2>
 
               <motion.p
@@ -133,9 +134,10 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={heroInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.5 }}>
-                I build scalable applications and data pipelines. Currently
-                mastering data engineering through DataLab while bringing
-                software engineering best practices to data infrastructure.
+                I build production-ready applications from concept to
+                deployment. Shipped six complete projects including a live SaaS
+                platform with ML predictions, payment processing, and real
+                users.
               </motion.p>
 
               {/* CTA Buttons */}
@@ -183,7 +185,7 @@ export default function Home() {
                   },
                   {
                     Icon: Mail,
-                    href: "mailto:https://withthedev@gmail.com",
+                    href: "mailto:withthedev@gmail.com?subject=Hello from Portfolio",
                     label: "Email",
                   },
                 ].map(({ Icon, href, label }, index) => (

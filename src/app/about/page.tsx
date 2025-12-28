@@ -25,27 +25,42 @@ export default function AboutPage() {
 
   const experiences = [
     {
-      title: "Software Developer",
-      company: "Jam-Forte Technologies",
-      period: "2022 - 2023",
+      title: "Full-Stack Developer (Independent)",
+      company: "Personal Projects & SaaS Development",
+      period: "2023 - Present",
       description:
-        "Building scalable web applications and APIs using modern frameworks. Focus on clean architecture and best practices.",
+        "Building and deploying complete web applications from concept to production, specializing in React/TypeScript frontends with Python/FastAPI backends.",
       achievements: [
-        "Developed 15+ production applications",
-        "Improved application performance by 60%",
-        "Led migration to microservices architecture",
+        "Built and deployed production SaaS platform with ML predictions, Stripe payments, and early users",
+        "Optimized API performance reducing prediction latency by 85% (15s → <2s)",
+        "Shipped 6 complete applications: e-commerce, analytics dashboards, AI-powered tools",
+        "Integrated payment processing, user authentication, and cloud deployment (Vercel, Railway)",
+        "Maintained 99.8% uptime serving thousands of predictions with PostgreSQL database",
+      ],
+    },
+    {
+      title: "Frontend Developer",
+      company: "JAM-Forte Technologies Ltd",
+      period: "Sep 2022 - Sep 2023",
+      description:
+        "Developed responsive user interfaces for production web applications using React.js and modern CSS frameworks.",
+      achievements: [
+        "Built responsive components with React.js, TailwindCSS, and Bootstrap",
+        "Collaborated with design team to implement pixel-perfect interfaces",
+        "Ensured cross-browser compatibility across Chrome, Firefox, Safari, Edge",
+        "Participated in code reviews and frontend development workflow improvements",
       ],
     },
     {
       title: "Data Engineering Student",
-      company: "DataLab Bootcamp",
-      period: "2024 - Present",
+      company: "DataCamp",
+      period: "Dec 2025 - Present",
       description:
-        "Intensive data engineering program covering ETL pipelines, data warehousing, and big data technologies.",
+        "Expanding skillset into data engineering through structured career track covering SQL, Python data tools, and big data technologies.",
       achievements: [
-        "Built real-time data pipelines processing 100K+ records/min",
-        "Designed cloud data warehouse with Snowflake",
-        "Implemented ML model deployment pipeline",
+        "Learning Apache Spark, Kafka, and Airflow for production data pipelines",
+        "Completing hands-on projects with SQL optimization and data warehousing",
+        "Building ETL pipeline projects with Pandas, NumPy, and PySpark",
       ],
     },
   ];
@@ -53,15 +68,24 @@ export default function AboutPage() {
   const education = [
     {
       degree: "Bachelor of Science in Physics",
-      institution: "Federal University Of Pertroleum Resources Effurun",
+      institution: "Federal University of Petroleum Resources",
       period: "2015 - 2019",
-      focus: "Physics, Mathematics, Computer Programming",
+      focus:
+        "Computational Physics, Data Analysis, Mathematical Modeling, Statistics",
     },
     {
-      degree: "Data Engineering Bootcamp",
-      institution: "DataLab",
+      degree: "Data Engineering Track (In Progress)",
+      institution: "DataCamp",
+      period: "Dec 2024 - Present",
+      focus:
+        "SQL, Python (Pandas/NumPy), Apache Spark, Apache Kafka, Airflow, ETL/ELT",
+    },
+    {
+      degree: "Professional Certifications",
+      institution: "IBM & DataCamp",
       period: "2024",
-      focus: "ETL, Data Warehousing, Apache Spark, Airflow",
+      focus:
+        "React Development, Cloud Computing, Data Engineering Fundamentals",
     },
   ];
 
@@ -103,9 +127,13 @@ export default function AboutPage() {
             </motion.h1>
 
             {[
-              "I'm a Software Developer with a passion for building robust applications and efficient data systems. Currently expanding my expertise into Data Engineering through DataLab's intensive bootcamp.",
-              "My unique combination of software engineering fundamentals and data engineering skills allows me to build end-to-end solutions—from application development to data pipeline architecture and analytics infrastructure.",
-              "I believe in writing clean, maintainable code, embracing best practices, and continuously learning to stay ahead in this ever-evolving tech landscape.",
+              "I'm a Full-Stack Developer who builds complete applications—not just features. Specializing in React/Next.js frontends with Python/FastAPI backends, I've built and deployed six production applications demonstrating my ability to ship complete products.",
+
+              "My most ambitious project is a cryptocurrency and stock price prediction platform I designed, built, and deployed from scratch. It features machine learning models achieving 95%+ accuracy, Stripe payment integration, and production-grade infrastructure. Building this taught me everything from ML model deployment to payment processing to production optimization.",
+
+              "With professional experience at JAM-Forte Technologies combined with extensive independent development, I've proven I can work both in team environments and independently. Each project has reinforced my ability to take ideas from concept to production.",
+
+              "I'm currently expanding into data engineering through DataCamp, learning Apache Spark, Kafka, and Airflow. My goal is to combine application development with data infrastructure—building systems that don't just display data, but process it at scale.",
             ].map((paragraph, index) => (
               <motion.p
                 key={index}
