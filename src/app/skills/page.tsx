@@ -10,7 +10,6 @@ import {
   Brain,
   Package,
   Server,
-  Workflow,
 } from "lucide-react";
 
 export default function SkillsPage() {

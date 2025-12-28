@@ -363,7 +363,7 @@ export default function Home() {
                 },
               },
             }}>
-            {getFeaturedProjects().map((project, index) => (
+            {getFeaturedProjects().map((project) => (
               <motion.div
                 key={project.id}
                 variants={{
