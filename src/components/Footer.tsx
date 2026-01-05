@@ -17,7 +17,11 @@ export default function Footer() {
       href: "https://linkedin.com/in/hezekiah-enahoro",
       label: "LinkedIn",
     },
-    { Icon: Mail, href: "https://mailto:withthedev@gmail.com", label: "Email" },
+    {
+      Icon: Mail,
+      href: "https://mailto:oriehezekiah@gmail.com",
+      label: "Email",
+    },
   ];
 
   const quickLinks = [

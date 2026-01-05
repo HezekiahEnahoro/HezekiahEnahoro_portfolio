@@ -15,7 +15,6 @@ import { useInView } from "react-intersection-observer";
 import { getFeaturedProjects } from "@/data/projects";
 import ProjectCard from "@/components/ProjectCard";
 
-
 export default function Home() {
   const [heroRef, heroInView] = useInView({
     triggerOnce: true,
@@ -185,7 +184,7 @@ export default function Home() {
                   },
                   {
                     Icon: Mail,
-                    href: "mailto:withthedev@gmail.com?subject=Hello from Portfolio",
+                    href: "mailto:oriehezekiah@gmail.com?subject=Hello from Portfolio",
                     label: "Email",
                   },
                 ].map(({ Icon, href, label }, index) => (

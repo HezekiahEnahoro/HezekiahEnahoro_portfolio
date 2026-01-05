@@ -1,20 +1,23 @@
-'use client'
+"use client";
 
-import ContactForm from '@/components/ContactForm'
-import { Mail, MapPin, Linkedin, Github } from 'lucide-react'
-import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
+import ContactForm from "@/components/ContactForm";
+import { Mail, MapPin, Linkedin, Github } from "lucide-react";
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 export default function ContactPage() {
-  const [headerRef, headerInView] = useInView({ triggerOnce: true, threshold: 0.1 })
-  const [faqRef, faqInView] = useInView({ triggerOnce: true, threshold: 0.1 })
+  const [headerRef, headerInView] = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+  const [faqRef, faqInView] = useInView({ triggerOnce: true, threshold: 0.1 });
 
   const contactInfo = [
     {
       icon: Mail,
       label: "Email",
-      value: "withthedev@gmail.com",
-      href: "mailto:withthedev@gmail.com?subject=Hello from Portfolio",
+      value: "oriehezekiah@gmail.com",
+      href: "mailto:oriehezekiah@gmail.com?subject=Hello from Portfolio",
     },
     {
       icon: MapPin,
@@ -25,35 +28,39 @@ export default function ContactPage() {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com",
+      value: "linkedin.com/in/hezekiah-enahoro",
       href: "https://linkedin.com/in/hezekiah-enahoro",
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com",
+      value: "github.com/HezekiahEnahoro",
       href: "https://github.com/HezekiahEnahoro",
     },
   ];
 
   const faqs = [
     {
-      question: 'What services do you offer?',
-      answer: 'I specialize in full-stack web development, data pipeline engineering, API development, and data warehouse design. I can help with both new projects and improving existing systems.'
+      question: "What services do you offer?",
+      answer:
+        "I specialize in full-stack web development, data pipeline engineering, API development, and data warehouse design. I can help with both new projects and improving existing systems.",
     },
     {
       question: "What's your typical project timeline?",
-      answer: "Project timelines vary based on scope and complexity. After our initial discussion, I'll provide a detailed timeline and milestones for your project."
+      answer:
+        "Project timelines vary based on scope and complexity. After our initial discussion, I'll provide a detailed timeline and milestones for your project.",
     },
     {
-      question: 'Do you work with startups?',
-      answer: 'Absolutely! I love working with startups and early-stage companies. I understand the need for rapid development and scalable solutions.'
+      question: "Do you work with startups?",
+      answer:
+        "Absolutely! I love working with startups and early-stage companies. I understand the need for rapid development and scalable solutions.",
     },
     {
-      question: 'Can you help with existing projects?',
-      answer: 'Yes! I can help optimize existing codebases, migrate legacy systems, improve data pipelines, or add new features to your applications.'
-    }
-  ]
+      question: "Can you help with existing projects?",
+      answer:
+        "Yes! I can help optimize existing codebases, migrate legacy systems, improve data pipelines, or add new features to your applications.",
+    },
+  ];
 
   return (
     <div className="min-h-screen pt-24 pb-20">

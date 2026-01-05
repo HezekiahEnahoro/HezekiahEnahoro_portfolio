@@ -73,9 +73,11 @@ export default function SkillsPage() {
    },
    {
      icon: Brain,
-     title: "Data & Machine Learning",
+     title: "AI & Machine Learning",
      color: "from-pink-500 to-rose-500",
      skills: [
+       { name: "OpenAI API", level: 70 },
+       { name: "Prompt Engineering", level: 65 },
        { name: "Pandas/NumPy", level: 75 },
        { name: "XGBoost", level: 70 },
        { name: "Scikit-learn", level: 65 },
